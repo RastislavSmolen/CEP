@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		513C10F6A1D0AE45E6D8DAD7 /* Pods_CEP_CEPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB50CABA64C5C61A5D719F0A /* Pods_CEP_CEPUITests.framework */; };
+		61BF104407A327393368B823 /* Pods_CEP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 126753FFCEE41B312EE051E1 /* Pods_CEP.framework */; };
 		6315342E2583F35A00AFE1E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6315342D2583F35A00AFE1E6 /* AppDelegate.swift */; };
 		631534302583F35A00AFE1E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6315342F2583F35A00AFE1E6 /* SceneDelegate.swift */; };
 		631534322583F35A00AFE1E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631534312583F35A00AFE1E6 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 		6315343D2583F35B00AFE1E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6315343B2583F35B00AFE1E6 /* LaunchScreen.storyboard */; };
 		631534482583F35B00AFE1E6 /* CEPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631534472583F35B00AFE1E6 /* CEPTests.swift */; };
 		631534532583F35B00AFE1E6 /* CEPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631534522583F35B00AFE1E6 /* CEPUITests.swift */; };
+		6315355525840D3900AFE1E6 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6315355425840D3900AFE1E6 /* R.generated.swift */; };
+		87343F802A80177D5D385310 /* Pods_CEPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C6A955A2010430A94FA228 /* Pods_CEPTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		126753FFCEE41B312EE051E1 /* Pods_CEP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CEP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20C6A955A2010430A94FA228 /* Pods_CEPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CEPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B2C043FF793830B5969C9E9 /* Pods-CEP-CEPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CEP-CEPUITests.debug.xcconfig"; path = "Target Support Files/Pods-CEP-CEPUITests/Pods-CEP-CEPUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DC043FDC1FFDED02A537C64 /* Pods-CEP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CEP.release.xcconfig"; path = "Target Support Files/Pods-CEP/Pods-CEP.release.xcconfig"; sourceTree = "<group>"; };
 		6315342A2583F35A00AFE1E6 /* CEP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CEP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6315342D2583F35A00AFE1E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6315342F2583F35A00AFE1E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +59,12 @@
 		6315344E2583F35B00AFE1E6 /* CEPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CEPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		631534522583F35B00AFE1E6 /* CEPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CEPUITests.swift; sourceTree = "<group>"; };
 		631534542583F35B00AFE1E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6315355425840D3900AFE1E6 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		885A7F779396CBCD2ACA13C9 /* Pods-CEPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CEPTests.release.xcconfig"; path = "Target Support Files/Pods-CEPTests/Pods-CEPTests.release.xcconfig"; sourceTree = "<group>"; };
+		A37B22005F2FAF7E32B75B1C /* Pods-CEPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CEPTests.debug.xcconfig"; path = "Target Support Files/Pods-CEPTests/Pods-CEPTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C3E10423DE5CE38E82489F41 /* Pods-CEP-CEPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CEP-CEPUITests.release.xcconfig"; path = "Target Support Files/Pods-CEP-CEPUITests/Pods-CEP-CEPUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E5394FA111EC008299B10A07 /* Pods-CEP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CEP.debug.xcconfig"; path = "Target Support Files/Pods-CEP/Pods-CEP.debug.xcconfig"; sourceTree = "<group>"; };
+		EB50CABA64C5C61A5D719F0A /* Pods_CEP_CEPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CEP_CEPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61BF104407A327393368B823 /* Pods_CEP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87343F802A80177D5D385310 /* Pods_CEPTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				513C10F6A1D0AE45E6D8DAD7 /* Pods_CEP_CEPUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +103,7 @@
 				631534512583F35B00AFE1E6 /* CEPUITests */,
 				6315342B2583F35A00AFE1E6 /* Products */,
 				DB6F0DF4973E6D0D67049436 /* Pods */,
+				FF9CD2F66D8BB29A1DD9709E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,15 +154,40 @@
 		6315350F2584089100AFE1E6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6315355F25840D7600AFE1E6 /* String Files */,
+				6315355425840D3900AFE1E6 /* R.generated.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6315355F25840D7600AFE1E6 /* String Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "String Files";
 			sourceTree = "<group>";
 		};
 		DB6F0DF4973E6D0D67049436 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				E5394FA111EC008299B10A07 /* Pods-CEP.debug.xcconfig */,
+				5DC043FDC1FFDED02A537C64 /* Pods-CEP.release.xcconfig */,
+				4B2C043FF793830B5969C9E9 /* Pods-CEP-CEPUITests.debug.xcconfig */,
+				C3E10423DE5CE38E82489F41 /* Pods-CEP-CEPUITests.release.xcconfig */,
+				A37B22005F2FAF7E32B75B1C /* Pods-CEPTests.debug.xcconfig */,
+				885A7F779396CBCD2ACA13C9 /* Pods-CEPTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF9CD2F66D8BB29A1DD9709E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				126753FFCEE41B312EE051E1 /* Pods_CEP.framework */,
+				EB50CABA64C5C61A5D719F0A /* Pods_CEP_CEPUITests.framework */,
+				20C6A955A2010430A94FA228 /* Pods_CEPTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,9 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 631534572583F35B00AFE1E6 /* Build configuration list for PBXNativeTarget "CEP" */;
 			buildPhases = (
+				ADD70A68B4BB7D662EDE3626 /* [CP] Check Pods Manifest.lock */,
+				6315356D25840EDF00AFE1E6 /* ShellScript */,
 				631534262583F35A00AFE1E6 /* Sources */,
 				631534272583F35A00AFE1E6 /* Frameworks */,
 				631534282583F35A00AFE1E6 /* Resources */,
+				D49B1106D09E803B22FD5D3E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,6 +217,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6315345A2583F35B00AFE1E6 /* Build configuration list for PBXNativeTarget "CEPTests" */;
 			buildPhases = (
+				C7BD50CDFCEA49615B5846D4 /* [CP] Check Pods Manifest.lock */,
 				6315343F2583F35B00AFE1E6 /* Sources */,
 				631534402583F35B00AFE1E6 /* Frameworks */,
 				631534412583F35B00AFE1E6 /* Resources */,
@@ -189,9 +236,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6315345D2583F35B00AFE1E6 /* Build configuration list for PBXNativeTarget "CEPUITests" */;
 			buildPhases = (
+				FC48E6774B8B698F237F5BF6 /* [CP] Check Pods Manifest.lock */,
 				6315344A2583F35B00AFE1E6 /* Sources */,
 				6315344B2583F35B00AFE1E6 /* Frameworks */,
 				6315344C2583F35B00AFE1E6 /* Resources */,
+				C9DB38959D9E266AE4643E32 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -272,6 +321,128 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6315356D25840EDF00AFE1E6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		ADD70A68B4BB7D662EDE3626 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CEP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7BD50CDFCEA49615B5846D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CEPTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9DB38959D9E266AE4643E32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CEP-CEPUITests/Pods-CEP-CEPUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CEP-CEPUITests/Pods-CEP-CEPUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CEP-CEPUITests/Pods-CEP-CEPUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D49B1106D09E803B22FD5D3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CEP/Pods-CEP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CEP/Pods-CEP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CEP/Pods-CEP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC48E6774B8B698F237F5BF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CEP-CEPUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		631534262583F35A00AFE1E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -279,6 +450,7 @@
 			files = (
 				631534382583F35A00AFE1E6 /* CEP.xcdatamodeld in Sources */,
 				631534322583F35A00AFE1E6 /* ViewController.swift in Sources */,
+				6315355525840D3900AFE1E6 /* R.generated.swift in Sources */,
 				6315342E2583F35A00AFE1E6 /* AppDelegate.swift in Sources */,
 				631534302583F35A00AFE1E6 /* SceneDelegate.swift in Sources */,
 			);
@@ -453,6 +625,7 @@
 		};
 		631534582583F35B00AFE1E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5394FA111EC008299B10A07 /* Pods-CEP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,6 +645,7 @@
 		};
 		631534592583F35B00AFE1E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DC043FDC1FFDED02A537C64 /* Pods-CEP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -491,6 +665,7 @@
 		};
 		6315345B2583F35B00AFE1E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A37B22005F2FAF7E32B75B1C /* Pods-CEPTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +688,7 @@
 		};
 		6315345C2583F35B00AFE1E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 885A7F779396CBCD2ACA13C9 /* Pods-CEPTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -535,6 +711,7 @@
 		};
 		6315345E2583F35B00AFE1E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B2C043FF793830B5969C9E9 /* Pods-CEP-CEPUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -555,6 +732,7 @@
 		};
 		6315345F2583F35B00AFE1E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3E10423DE5CE38E82489F41 /* Pods-CEP-CEPUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

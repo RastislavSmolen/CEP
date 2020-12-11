@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "29D547981F9C064F1ECD8E10E7A0B420"
-               BuildableName = "Pods_CEPTests.framework"
-               BlueprintName = "Pods-CEPTests"
+               BlueprintIdentifier = "230984053C6652DFF510F450F21C5CF7"
+               BuildableName = "R.swift"
+               BlueprintName = "R.swift"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
