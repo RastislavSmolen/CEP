@@ -1,12 +1,14 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+# platform :ios, '14.2'
 
 target 'CEP' do
+
+pod 'SwiftLint'
+
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for CEP
-pod 'SwiftLint'
 
   target 'CEPTests' do
     inherit! :search_paths
