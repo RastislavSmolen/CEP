@@ -147,6 +147,8 @@
 			dependencies = (
 			);
 			name = CEP;
+			packageProductDependencies = (
+			);
 			productName = CEP;
 			productReference = 6315342A2583F35A00AFE1E6 /* CEP.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +220,8 @@
 				Base,
 			);
 			mainGroup = 631534212583F35A00AFE1E6;
+			packageReferences = (
+			);
 			productRefGroup = 6315342B2583F35A00AFE1E6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
