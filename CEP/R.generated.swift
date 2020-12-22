@@ -166,10 +166,10 @@ struct R: Rswift.Validatable {
   struct string {
     /// This `R.string.helloWorld` struct is generated, and contains static references to 1 localization keys.
     struct helloWorld {
-      /// Value: Hello World
+      /// Value: Hello World !!!
       static let helloWorld = Rswift.StringResource(key: "hello.world", tableName: "HelloWorld", bundle: R.hostingBundle, locales: [], comment: nil)
 
-      /// Value: Hello World
+      /// Value: Hello World !!!
       static func helloWorld(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
           return NSLocalizedString("hello.world", tableName: "HelloWorld", bundle: hostingBundle, comment: "")
