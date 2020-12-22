@@ -8,12 +8,14 @@
 import UIKit
 import Rswift
 
-class ViewController: UIViewController {
+class HelloWorldViewController: UIViewController {
+    
+    @IBOutlet var HelloWorldTitleLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        HelloWorldTitleLabel.text = R.string.helloWorld.helloWorld()
     }
-
-    
 }
 
