@@ -10,12 +10,19 @@ import Rswift
 
 class HelloWorldViewController: UIViewController {
     
-    @IBOutlet var HelloWorldTitleLabel: UILabel!
-    
+    @IBOutlet private var helloWorldTitleLabel: UILabel!
+    private var helloWorldVM : HelloWorldViewModel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        HelloWorldTitleLabel.text = R.string.helloWorld.helloWorld()
+        setupView()
+    }
+    func setupView(){
+        helloWorldVM = HelloWorldViewModel()
+        populateHelloWorldLabel()
+    }
+    func populateHelloWorldLabel() {
+        helloWorldTitleLabel.text = helloWorldVM.helloWorldTitleLabel
     }
 }
 
