@@ -7,18 +7,16 @@
 
 import Foundation
 
-struct PlaceHolderAccountsData : Codable {
-    
-    
-    let kind : String
-    let title : String
-    let number : String
-    let balance : Double
-    let currency : String
-//    "kind": "current",
-//    "title": "Current Account",
-//    "number": "NL25 TRIO 0253 8443 20",
-//    "balance": 1000,
-//    "currency": "GBP"
-    
+public struct PlaceHolderAccountsData : Codable{
+    public let kind, title, number: String
+    public let balance: Double
+    public let currency: String
+
+    public init(kind: String, title:String, number:String, balance: Double, currency: String) {
+        self.kind = kind
+        self.title = title
+        self.number = number
+        self.balance = balance
+        self.currency = currency
+    }
 }
