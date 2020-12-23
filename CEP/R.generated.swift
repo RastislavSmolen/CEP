@@ -176,8 +176,37 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.string` struct is generated, and contains static references to 1 localization tables.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  struct reuseIdentifier {
+    /// Reuse identifier `AccountsCell`.
+    static let accountsCell: Rswift.ReuseIdentifier<AccountTableViewCell> = Rswift.ReuseIdentifier(identifier: "AccountsCell")
+
+    fileprivate init() {}
+  }
+
+  /// This `R.string` struct is generated, and contains static references to 2 localization tables.
   struct string {
+    /// This `R.string.cellIdentifier` struct is generated, and contains static references to 1 localization keys.
+    struct cellIdentifier {
+      /// Value: AccountsCell
+      static let cellIdentifier = Rswift.StringResource(key: "cell.identifier", tableName: "CellIdentifier", bundle: R.hostingBundle, locales: [], comment: nil)
+
+      /// Value: AccountsCell
+      static func cellIdentifier(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("cell.identifier", tableName: "CellIdentifier", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "CellIdentifier", preferredLanguages: preferredLanguages) else {
+          return "cell.identifier"
+        }
+
+        return NSLocalizedString("cell.identifier", tableName: "CellIdentifier", bundle: bundle, comment: "")
+      }
+
+      fileprivate init() {}
+    }
+
     /// This `R.string.helloWorld` struct is generated, and contains static references to 1 localization keys.
     struct helloWorld {
       /// Value: Hello World !!!
@@ -251,7 +280,7 @@ struct _R: Rswift.Validatable {
 
     #if os(iOS) || os(tvOS)
     struct main: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = HelloWorldViewController
+      typealias InitialController = AccountsViewController
 
       let bundle = R.hostingBundle
       let name = "Main"

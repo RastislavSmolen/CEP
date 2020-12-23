@@ -7,8 +7,7 @@
 
 import Foundation
 class Networking {
-    var model = HelloWorldViewModel()
-    
+
     static func readLocalFile(fileName: String) -> Data? {
             if let path = Bundle.main.path(forResource: fileName, ofType: "json") {
                 do {
@@ -20,6 +19,7 @@ class Networking {
 }
     return nil
     }
+
      func parseJson(jsonData: Data) -> [PlaceHolderAccountsData]?  {
         do {
             let decodeData = try! JSONDecoder().decode([PlaceHolderAccountsData].self, from: jsonData)
@@ -28,5 +28,4 @@ class Networking {
             print(error.localizedDescription)
         }
     }
-    
 }
