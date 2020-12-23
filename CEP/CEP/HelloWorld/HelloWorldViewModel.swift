@@ -9,5 +9,7 @@ import Foundation
 import Rswift
 
 class HelloWorldViewModel {
+
     let helloWorldTitleLabel = R.string.helloWorld.helloWorld()
+ 
 }
