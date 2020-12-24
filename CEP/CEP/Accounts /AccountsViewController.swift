@@ -12,18 +12,26 @@ class AccountsViewController : UIViewController,UITableViewDelegate {
  
     let cell = AccountTableViewCell()
     var accounts = [PlaceHolderAccountsData]()
+    var test = [Response]()
+    let net = Newtworking()
     
     @IBOutlet var tableView: UITableView!
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        net.getData(from: "https://jsonplaceholder.typicode.com/todos")
+    print(test.count)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpView()
         
+        setUpView()
         tableView.delegate = self
         tableView.dataSource = self
     
     }
     private func setUpView() {
        grabDataFromJsonModel()
+       
     }
     func grabDataFromJsonModel() {
         if let localData = AccountsViewController.readLocalFile(fileName: "Accounts") {
@@ -58,7 +66,7 @@ class AccountsViewController : UIViewController,UITableViewDelegate {
 extension AccountsViewController:UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return accounts.count
+        return test.count//accounts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
