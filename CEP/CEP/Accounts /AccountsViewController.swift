@@ -10,23 +10,25 @@ import UIKit
 
 class AccountsViewController : UIViewController,UITableViewDelegate {
  
-    let cell = AccountTableViewCell()
     var accounts = [PlaceHolderAccountsData]()
-    var test = [Response]()
+    var test = [Myresponse]()
     let net = Newtworking()
     
     @IBOutlet var tableView: UITableView!
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        net.getData(from: "https://jsonplaceholder.typicode.com/todos")
-    print(test.count)
-    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setUpView()
+        net.fetchFilms { [weak self] (test) in
+            self?.test = test
+             DispatchQueue.main.async {
+               self?.tableView.reloadData()
+             }
+           }
         tableView.delegate = self
         tableView.dataSource = self
+        setUpView()
+        
     
     }
     private func setUpView() {
@@ -66,7 +68,8 @@ class AccountsViewController : UIViewController,UITableViewDelegate {
 extension AccountsViewController:UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return test.count//accounts.count
+        print(test.count)
+        return  accounts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
