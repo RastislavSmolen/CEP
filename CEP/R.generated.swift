@@ -178,18 +178,20 @@ struct R: Rswift.Validatable {
 
   /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
   struct reuseIdentifier {
-    /// Reuse identifier `AccountsCell`.
-    static let accountsCell: Rswift.ReuseIdentifier<AccountTableViewCell> = Rswift.ReuseIdentifier(identifier: "AccountsCell")
+    /// Reuse identifier `TypicodeCell`.
+    static let typicodeCell: Rswift.ReuseIdentifier<TypicodeTableViewCell> = Rswift.ReuseIdentifier(identifier: "TypicodeCell")
 
     fileprivate init() {}
   }
 
-  /// This `R.string` struct is generated, and contains static references to 2 localization tables.
+  /// This `R.string` struct is generated, and contains static references to 3 localization tables.
   struct string {
-    /// This `R.string.cellIdentifier` struct is generated, and contains static references to 1 localization keys.
+    /// This `R.string.cellIdentifier` struct is generated, and contains static references to 2 localization keys.
     struct cellIdentifier {
       /// Value: AccountsCell
       static let cellIdentifier = Rswift.StringResource(key: "cell.identifier", tableName: "CellIdentifier", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: TypicodeCell
+      static let cellIndentifierTypicodeCell = Rswift.StringResource(key: "cell.indentifier.typicode.cell", tableName: "CellIdentifier", bundle: R.hostingBundle, locales: [], comment: nil)
 
       /// Value: AccountsCell
       static func cellIdentifier(preferredLanguages: [String]? = nil) -> String {
@@ -202,6 +204,19 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("cell.identifier", tableName: "CellIdentifier", bundle: bundle, comment: "")
+      }
+
+      /// Value: TypicodeCell
+      static func cellIndentifierTypicodeCell(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("cell.indentifier.typicode.cell", tableName: "CellIdentifier", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "CellIdentifier", preferredLanguages: preferredLanguages) else {
+          return "cell.indentifier.typicode.cell"
+        }
+
+        return NSLocalizedString("cell.indentifier.typicode.cell", tableName: "CellIdentifier", bundle: bundle, comment: "")
       }
 
       fileprivate init() {}
@@ -223,6 +238,27 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("hello.world", tableName: "HelloWorld", bundle: bundle, comment: "")
+      }
+
+      fileprivate init() {}
+    }
+
+    /// This `R.string.typicodeAPI` struct is generated, and contains static references to 1 localization keys.
+    struct typicodeAPI {
+      /// Value: https://jsonplaceholder.typicode.com/todos
+      static let typicodeApi = Rswift.StringResource(key: "typicode.api", tableName: "TypicodeAPI", bundle: R.hostingBundle, locales: [], comment: nil)
+
+      /// Value: https://jsonplaceholder.typicode.com/todos
+      static func typicodeApi(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("typicode.api", tableName: "TypicodeAPI", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "TypicodeAPI", preferredLanguages: preferredLanguages) else {
+          return "typicode.api"
+        }
+
+        return NSLocalizedString("typicode.api", tableName: "TypicodeAPI", bundle: bundle, comment: "")
       }
 
       fileprivate init() {}
@@ -280,7 +316,7 @@ struct _R: Rswift.Validatable {
 
     #if os(iOS) || os(tvOS)
     struct main: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = AccountsViewController
+      typealias InitialController = JsonTypicodeViewController
 
       let bundle = R.hostingBundle
       let name = "Main"

@@ -1,0 +1,8 @@
+/* 
+  TypicodeAPI.strings
+  CEP
+
+  Created by Rastislav Smolen on 28/12/2020.
+  
+*/
+"typicode.api" = "https://jsonplaceholder.typicode.com/todos"; 
