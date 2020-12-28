@@ -7,10 +7,10 @@
 
 import Foundation
 
-class Newtworking {
+class Networking {
     
     func fetchFilms(completionHandler: @escaping ([Myresponse]) -> Void) {
-        let url = URL(string: "https://jsonplaceholder.typicode.com/todos" )!
+        let url = URL(string: R.string.typicodeAPI.typicodeApi() )!
 
         let task = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
           if let error = error {

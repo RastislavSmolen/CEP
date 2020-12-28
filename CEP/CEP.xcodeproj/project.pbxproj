@@ -22,6 +22,9 @@
 		63EA3AB82593DBC50044DA64 /* CellIdentifier.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63EA3AB72593DBC50044DA64 /* CellIdentifier.strings */; };
 		63EA3AD3259409060044DA64 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EA3AD2259409060044DA64 /* Networking.swift */; };
 		63EA3AD825940BCA0044DA64 /* JsonTypicodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EA3AD725940BCA0044DA64 /* JsonTypicodeModel.swift */; };
+		63EBF6A4259A8B52004A413D /* TypicodeAPI.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63EBF6A3259A8B52004A413D /* TypicodeAPI.strings */; };
+		63EBF6A9259A8BFD004A413D /* JsonTypicodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EBF6A8259A8BFD004A413D /* JsonTypicodeViewController.swift */; };
+		63EBF6AE259A9B45004A413D /* TypicodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EBF6AD259A9B45004A413D /* TypicodeTableViewCell.swift */; };
 		63F0B30F2592907400B804B3 /* HelloWorld.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63F0B30E2592907400B804B3 /* HelloWorld.strings */; };
 		63F0B31D2592944100B804B3 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F0B31C2592944100B804B3 /* R.generated.swift */; };
 		63F0B32225929D6000B804B3 /* HelloWorldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F0B32125929D6000B804B3 /* HelloWorldViewModel.swift */; };
@@ -72,6 +75,9 @@
 		63EA3AB72593DBC50044DA64 /* CellIdentifier.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = CellIdentifier.strings; sourceTree = "<group>"; };
 		63EA3AD2259409060044DA64 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		63EA3AD725940BCA0044DA64 /* JsonTypicodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonTypicodeModel.swift; sourceTree = "<group>"; };
+		63EBF6A3259A8B52004A413D /* TypicodeAPI.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = TypicodeAPI.strings; sourceTree = "<group>"; };
+		63EBF6A8259A8BFD004A413D /* JsonTypicodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonTypicodeViewController.swift; sourceTree = "<group>"; };
+		63EBF6AD259A9B45004A413D /* TypicodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypicodeTableViewCell.swift; sourceTree = "<group>"; };
 		63F0B30E2592907400B804B3 /* HelloWorld.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = HelloWorld.strings; sourceTree = "<group>"; };
 		63F0B31C2592944100B804B3 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		63F0B32125929D6000B804B3 /* HelloWorldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldViewModel.swift; sourceTree = "<group>"; };
@@ -176,7 +182,9 @@
 			isa = PBXGroup;
 			children = (
 				63EA3AD2259409060044DA64 /* Networking.swift */,
+				63EBF6A8259A8BFD004A413D /* JsonTypicodeViewController.swift */,
 				63EA3AD725940BCA0044DA64 /* JsonTypicodeModel.swift */,
+				63EBF6AD259A9B45004A413D /* TypicodeTableViewCell.swift */,
 			);
 			path = JsonTypicode;
 			sourceTree = "<group>";
@@ -187,6 +195,7 @@
 				63F0B33D2592A7FF00B804B3 /* JSON */,
 				63F0B30E2592907400B804B3 /* HelloWorld.strings */,
 				63EA3AB72593DBC50044DA64 /* CellIdentifier.strings */,
+				63EBF6A3259A8B52004A413D /* TypicodeAPI.strings */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -351,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6315343D2583F35B00AFE1E6 /* LaunchScreen.storyboard in Resources */,
+				63EBF6A4259A8B52004A413D /* TypicodeAPI.strings in Resources */,
 				6315343A2583F35B00AFE1E6 /* Assets.xcassets in Resources */,
 				63F0B33F2592A81F00B804B3 /* Accounts.json in Resources */,
 				63EA3AB82593DBC50044DA64 /* CellIdentifier.strings in Resources */,
@@ -504,11 +514,13 @@
 			files = (
 				631534382583F35A00AFE1E6 /* CEP.xcdatamodeld in Sources */,
 				63EA3AD3259409060044DA64 /* Networking.swift in Sources */,
+				63EBF6A9259A8BFD004A413D /* JsonTypicodeViewController.swift in Sources */,
 				631534322583F35A00AFE1E6 /* HelloWorldViewController.swift in Sources */,
 				63EA3AAE2593D50A0044DA64 /* AccountsViewController.swift in Sources */,
 				63F0B31D2592944100B804B3 /* R.generated.swift in Sources */,
 				63EA3AB32593D8FF0044DA64 /* AccountsTableViewCell.swift in Sources */,
 				6315342E2583F35A00AFE1E6 /* AppDelegate.swift in Sources */,
+				63EBF6AE259A9B45004A413D /* TypicodeTableViewCell.swift in Sources */,
 				63F0B32225929D6000B804B3 /* HelloWorldViewModel.swift in Sources */,
 				631534302583F35A00AFE1E6 /* SceneDelegate.swift in Sources */,
 				63EA3AD825940BCA0044DA64 /* JsonTypicodeModel.swift in Sources */,
