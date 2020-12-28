@@ -11,20 +11,12 @@ import UIKit
 class AccountsViewController : UIViewController,UITableViewDelegate {
 //
 //    var accounts = [PlaceHolderAccountsData]()
-//    var test = [Myresponse]()
-//    let net = Networking()
-//
 //    @IBOutlet var tableView: UITableView!
 //
 //    override func viewDidLoad() {
 //        super.viewDidLoad()
 //
-//        net.fetchFilms { [weak self] (test) in
-//            self?.test = test
-//             DispatchQueue.main.async {
-//               self?.tableView.reloadData()
-//             }
-//           }
+//
 //        tableView.delegate = self
 //        tableView.dataSource = self
 //        setUpView()
@@ -68,7 +60,6 @@ class AccountsViewController : UIViewController,UITableViewDelegate {
 //extension AccountsViewController:UITableViewDataSource {
 //    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //
-//        print(test.count)
 //        return  accounts.count
 //    }
 //
