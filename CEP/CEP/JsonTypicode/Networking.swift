@@ -9,7 +9,7 @@ import Foundation
 
 class Networking {
     
-    func fetchFilms(completionHandler: @escaping ([Myresponse]) -> Void) {
+    func fetchData(completionHandler: @escaping ([Myresponse]) -> Void) {
         let url = URL(string: R.string.typicodeAPI.typicodeApi() )!
 
         let task = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
