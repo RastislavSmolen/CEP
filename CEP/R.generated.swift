@@ -89,6 +89,30 @@ struct R: Rswift.Validatable {
   }
 
   #if os(iOS) || os(tvOS)
+  /// This `R.segue` struct is generated, and contains static references to 1 view controllers.
+  struct segue {
+    /// This struct is generated for `JsonTypicodeViewController`, and contains static references to 1 segues.
+    struct jsonTypicodeViewController {
+      /// Segue identifier `cellInfo`.
+      static let cellInfo: Rswift.StoryboardSegueIdentifier<UIKit.UIStoryboardSegue, JsonTypicodeViewController, CellInformationViewController> = Rswift.StoryboardSegueIdentifier(identifier: "cellInfo")
+
+      #if os(iOS) || os(tvOS)
+      /// Optionally returns a typed version of segue `cellInfo`.
+      /// Returns nil if either the segue identifier, the source, destination, or segue types don't match.
+      /// For use inside `prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)`.
+      static func cellInfo(segue: UIKit.UIStoryboardSegue) -> Rswift.TypedStoryboardSegueInfo<UIKit.UIStoryboardSegue, JsonTypicodeViewController, CellInformationViewController>? {
+        return Rswift.TypedStoryboardSegueInfo(segueIdentifier: R.segue.jsonTypicodeViewController.cellInfo, segue: segue)
+      }
+      #endif
+
+      fileprivate init() {}
+    }
+
+    fileprivate init() {}
+  }
+  #endif
+
+  #if os(iOS) || os(tvOS)
   /// This `R.storyboard` struct is generated, and contains static references to 2 storyboards.
   struct storyboard {
     /// Storyboard `LaunchScreen`.
@@ -320,10 +344,16 @@ struct _R: Rswift.Validatable {
 
       let bundle = R.hostingBundle
       let name = "Main"
+      let second = StoryboardViewControllerResource<JsonTypicodeViewController>(identifier: "Second")
+
+      func second(_: Void = ()) -> JsonTypicodeViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: second)
+      }
 
       static func validate() throws {
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
+        if _R.storyboard.main().second() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'second' could not be loaded from storyboard 'Main' as 'JsonTypicodeViewController'.") }
       }
 
       fileprivate init() {}

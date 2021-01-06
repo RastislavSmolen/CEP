@@ -26,6 +26,21 @@ class JsonTypicodeViewController: UIViewController {
         }
         
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let cell = sender as? UITableViewCell {
+            let i = self.tableView.indexPath(for: cell)!.row
+            if segue.identifier == "cellInfo" {
+                let vc = segue.destination as! CellInformationViewController
+                let value = typicodeValues[i]
+                vc.userId = "\(value.userId)"
+                vc.id = "\(value.id)"
+                vc.title = value.title
+                vc.completed = "\(value.completed)"
+                
+                
+            }
+        }
+    }
 }
 extension JsonTypicodeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,6 +56,15 @@ extension JsonTypicodeViewController: UITableViewDelegate, UITableViewDataSource
         cell.competionTableViewCell.text = "\(typicodeValue.completed)"
         return cell
     }
+    
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//
+//        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+//        let informationToSend = storyboard?.instantiateViewController(identifier: "Second") as! CellInformationViewController
+//        let cellToSend = typicodeValues[indexPath.row]
+//        informationToSend.something = cellToSend.title
+//        self.navigationController?.pushViewController(informationToSend, animated: true)
+//    }
     
     
 }
