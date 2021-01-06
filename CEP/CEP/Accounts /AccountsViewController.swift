@@ -64,7 +64,7 @@ class AccountsViewController : UIViewController,UITableViewDelegate {
 //    }
 //
 //    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: R.string.cellIdentifier.cellIdentifier(), for: indexPath) as! AccountTableViewCell
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "AccountsCell", for: indexPath) as! AccountTableViewCell
 //        let acc =  accounts[indexPath.row]
 //        cell.kindAccountLabel.text = "Type of account : \(String(describing: acc.kind))"
 //        cell.titleAccountLabel.text = "Version of account : \(String(describing: acc.title))"

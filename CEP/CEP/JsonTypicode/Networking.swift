@@ -10,7 +10,7 @@ import Foundation
 class Networking {
     
     func fetchData(completionHandler: @escaping ([Myresponse]) -> Void) {
-        let url = URL(string: R.string.typicodeAPI.typicodeApi() )!
+        let url = URL(string: "https://jsonplaceholder.typicode.com/todos" )!
 
         let task = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
           if let error = error {

@@ -48,7 +48,7 @@ extension JsonTypicodeViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: R.string.cellIdentifier.cellIndentifierTypicodeCell(), for: indexPath) as! TypicodeTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TypicodeCell", for: indexPath) as! TypicodeTableViewCell
         let typicodeValue = typicodeValues[indexPath.row]
         cell.userIDTableViewCell.text = "\(typicodeValue.userId)"
         cell.idTableViewCell.text = "\(typicodeValue.id)"
