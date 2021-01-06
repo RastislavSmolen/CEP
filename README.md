@@ -1,5 +1,5 @@
 # CEP
 CEP - MVVM design pattern
 
-Cocoapods -  Swift lint  - pod 'SwiftLint'
-                        R.swift  -  pod 'R.swift'
+NOT CURRENTLY IN USE -  Cocoapods -  Swift lint  - pod 'SwiftLint'
+                                                                     R.swift  -  pod 'R.swift'
