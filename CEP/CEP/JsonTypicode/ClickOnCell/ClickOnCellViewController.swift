@@ -21,10 +21,10 @@ class CellInformationViewController : UIViewController {
     var completed = String()
     override func viewWillAppear(_ animated: Bool) {
         
-        userIdLabel.text = userId
-        idLabel.text = id
+        userIdLabel.text = "User Id : \(userId)"
+        idLabel.text = "Identification : \(id) "
         titleLabel.text = title
-        completedLabel.text = completed
+        completedLabel.text = "Status : \(completed)"
     }
 }
 
