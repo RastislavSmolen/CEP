@@ -31,7 +31,13 @@ class JsonTypicodeViewController: UIViewController {
             let i = self.tableView.indexPath(for: cell)!.row
             if segue.identifier == "cellInfo" {
                 let vc = segue.destination as! CellInformationViewController
-                vc.something = typicodeValues[i].title
+                let value = typicodeValues[i]
+                vc.userId = "\(value.userId)"
+                vc.id = "\(value.id)"
+                vc.title = value.title
+                vc.completed = "\(value.completed)"
+                
+                
             }
         }
     }

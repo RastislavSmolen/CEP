@@ -10,9 +10,21 @@ import UIKit
 
 class CellInformationViewController : UIViewController {
     
-    var something = String()
+    @IBOutlet var userIdLabel: UILabel!
+    @IBOutlet var idLabel: UILabel!
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var completedLabel: UILabel!
+    
+    var userId = String()
+    var id = String()
+    var tile = String()
+    var completed = String()
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+        
+        userIdLabel.text = userId
+        idLabel.text = id
+        titleLabel.text = title
+        completedLabel.text = completed
     }
 }
 
