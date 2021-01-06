@@ -11,7 +11,7 @@
         <!--Json Typicode View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="JsonTypicodeViewController" customModule="CEP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Second" id="BYZ-38-t0r" customClass="JsonTypicodeViewController" customModule="CEP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,6 +96,7 @@
                                             <outlet property="idTableViewCell" destination="Sl0-Jg-zib" id="V6p-vS-Nji"/>
                                             <outlet property="titleTableViewCell" destination="Tkb-5M-p0X" id="hw0-QD-xbg"/>
                                             <outlet property="userIDTableViewCell" destination="UCb-yU-qdQ" id="Fiy-De-FMZ"/>
+                                            <segue destination="Ubs-E1-cnc" kind="show" identifier="cellInfo" id="jKi-21-wPn"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -114,7 +115,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-423.1884057971015" y="161.41304347826087"/>
+            <point key="canvasLocation" x="-383" y="142"/>
+        </scene>
+        <!--Cell Information View Controller-->
+        <scene sceneID="I5x-yw-yBd">
+            <objects>
+                <viewController id="Ubs-E1-cnc" customClass="CellInformationViewController" customModule="CEP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3wG-wZ-wui">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="doR-2m-cSy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="84E-1a-yww"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2hR-SA-z9X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="142"/>
         </scene>
     </scenes>
     <resources>
